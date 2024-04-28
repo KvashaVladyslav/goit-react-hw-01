@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import css from "./Profile.module.css"
 
-export default function Profile({ name, tag, location, image, stats }) {
+export default function Profile({ userData: { name, tag, location, avatar, stats }}) {
   return (
     <div className={clsx(css.container)}>
         <div className={clsx(css.info)}>
         <img 
           className={clsx(css.image)}
-              src={image}
+              src={avatar}
               alt="User avatar"
             />
             <p className={clsx(css.title)}>{name}</p>
