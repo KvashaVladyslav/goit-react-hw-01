@@ -4,10 +4,12 @@ import FriendsList from "../FriendsList/FriendsList"
 import friends from "/src/friends.json"
 import TransactionHistory from "../TransactionHistory/TransactionHistory"
 import transactions from "/src/transactions.json"
+import clsx from "clsx"
+import css from "./App.module.css"
 
 export default function App() {
     return (
-        <div>
+        <div className={clsx(css.container)}>
             <Profile
                 name={userData.username}
                 tag={userData.tag}

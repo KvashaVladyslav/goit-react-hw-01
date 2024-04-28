@@ -1,0 +1,42 @@
+.item {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.onlineBorder {
+    border: 1px solid green;
+}
+
+.offlineBorder {
+    border: 1px solid red;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}

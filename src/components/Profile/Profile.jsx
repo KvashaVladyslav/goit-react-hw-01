@@ -1,28 +1,32 @@
+import clsx from "clsx";
+import css from "./Profile.module.css"
+
 export default function Profile({ name, tag, location, image, stats }) {
-    return(
-    <div>
-        <div>
-            <img
+  return (
+    <div className={clsx(css.container)}>
+        <div className={clsx(css.info)}>
+        <img 
+          className={clsx(css.image)}
               src={image}
               alt="User avatar"
             />
-            <p>{name}</p>
-            <p>@{tag}</p>
-            <p>{location}</p>
+            <p className={clsx(css.title)}>{name}</p>
+            <p className={clsx(css.tag)}>@{tag}</p>
+            <p className={clsx(css.location)}>{location}</p>
         </div>
 
-        <ul>
-            <li>
-              <span>Followers</span>
-              <span>{stats.followers}</span>
+        <ul className={clsx(css.list)}>
+            <li className={clsx(css.item)}>
+              <span className={clsx(css.text)}>Followers</span>
+              <span className={clsx(css.number)}>{stats.followers}</span>
             </li>
-            <li>
-              <span>Views</span>
-              <span>{stats.views}</span>
+            <li className={clsx(css.item)}>
+              <span className={clsx(css.text)}>Views</span>
+              <span className={clsx(css.number)}>{stats.views}</span>
             </li>
-            <li>
-              <span>Likes</span>
-              <span>{stats.likes}</span>
+            <li className={clsx(css.item)}>
+              <span className={clsx(css.text)}>Likes</span>
+              <span className={clsx(css.number)}>{stats.likes}</span>
             </li>
         </ul>
     </div>

@@ -1,0 +1,19 @@
+.table {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.head {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.headList {
+    padding: 8px;
+}
+
+.bodyList {
+    padding: 8px;
+}
